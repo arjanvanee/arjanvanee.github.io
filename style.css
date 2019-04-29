@@ -10,10 +10,13 @@ html, body {
     padding: .8rem;
 }
 .navbar-nav li {
-    padding-right: 20px
+    padding-right: 20px;
 }
 .nav-link {
     font-size: 1.1em !important;
+}
+.navbar .navbar-nav li a {
+    color: aqua
 }
 .carousel-inner img {
     width: 100%;
@@ -26,7 +29,7 @@ html, body {
 }
 .carousel-indicators {
     position: absolute;
-    top: 80%
+    top: 75%
 }
 .carousel-caption h1 {
     font-size: 500%;
@@ -104,10 +107,14 @@ hr.light-100 {
 
 @media (max-width: 768px) {
   .carousel-caption {
-    top: 45%;
+    top: 50%;
     }
     .carousel-caption h1 {
     font-size: 350%;
+    }
+    .carousel-indicators {
+    position: absolute;
+    top: 90%
     }
     .display-4 {
         font-size: 200%;
@@ -120,7 +127,7 @@ hr.light-100 {
 
 @media (max-width: 576px) {
     .carousel-caption {
-        top: 40%;
+        top: 50%;
     }
     .carousel-caption h1 {
         font-size: 250%;
