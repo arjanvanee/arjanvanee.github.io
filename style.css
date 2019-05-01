@@ -130,8 +130,8 @@ hr.light-100 {
     margin-bottom: 1rem;
 }
 .onderstediv {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 /*---Media Queries --*/
 @media (max-width: 992px) {
