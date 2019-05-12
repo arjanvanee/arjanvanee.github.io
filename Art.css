@@ -28,57 +28,24 @@ html, body {
 .navbar .navbar-nav li a:hover {
     color: #14d100 !important;
 }
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
+.center {
+    text-align: center;
 }
-.carousel-caption {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.gallery {
+    margin: 10px 50px;
 }
-.carousel-indicators {
-    position: absolute;
-    top: 70%
+.gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
 }
-.carousel-caption h1 {
-    font-size: 500%;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000;
+.gallery img:hover {
+    filter: drop-shadow(10px 10px 3px #999);
+    transform: scale(1.1);
 }
 .padding {
     padding-right: 2rem;
     padding-left: 2rem;
-}
-.display-4 {
-    font-weight: 500;
-}
-.welcome {
-    width: 75%;
-    margin: 0 auto;
-    padding-top: 2rem;
-}
-.opvallend1 {
-    color: #14d100;
-    font-weight: 700;   
-}
-.opvallend2 {
-    color: #14d100;
-    font-weight: 500;   
-}
-.welcome hr {
-    border-top: 2px solid #b4b4b4;
-    width: 95%;
-    margin-top: .3rem;
-    margin-bottom: 1rem;
-}
-.icon{
-    padding-bottom: 20px;
-    height: 50%;
-}
-.photoshopunity{
-    padding-left: 18%;
-    padding-right: 18%;
 }
 .social a {
     font-size: 3.5em;

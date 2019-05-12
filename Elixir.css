@@ -89,6 +89,9 @@ html, body {
 .cmdtext{
     margin-top: 4%;
 }
+.animaties {
+    margin-bottom: 2em;
+}
 .fa-facebook:hover,
 .fa-instagram:hover {
     color: #d5d5d5;
