@@ -3,6 +3,7 @@
 html, body {
     height: 100%;
     width: 100%;
+    background-color: #adadad;
     font-family: 'poppins', sans-serif;
     color: #222;
     overflow-x: hidden;
@@ -28,6 +29,12 @@ html, body {
 .navbar .navbar-nav li a:hover {
     color: #14d100 !important;
 }
+.display-4 {
+        font font-weight: 500;
+    }
+.opvulling {
+    height: 200px;
+}
 .center {
     text-align: center;
 }
@@ -35,12 +42,12 @@ html, body {
     margin: 10px 50px;
 }
 .gallery img {
-    transition: 1s;
+    transition: .7s;
     padding: 15px;
-    width: 200px;
+    width: 300px;
 }
 .gallery img:hover {
-    filter: drop-shadow(10px 10px 3px #999);
+    filter: drop-shadow(10px 10px 3px #4e4e4e);
     transform: scale(1.1);
 }
 .padding {
@@ -70,7 +77,7 @@ html, body {
     color: #d5d5d5;
 }
 footer {
-    background-color: #3f3f3f;
+    background-color: #000000;
     color: #d5d5d5;
     padding-top: 2rem;
 }
@@ -84,8 +91,8 @@ footer a {
     color: #d5d5d5
 }
 .footerlogo {
-    height: 200px;
-    margin-bottom: 2rem;
+    height: 90px;
+    margin-bottom: 1rem;
 }
 hr.light-100 {
     border-top: 1px solid #d5d5d5;
@@ -106,6 +113,9 @@ hr.light-100 {
 }
 
 @media (max-width: 768px) {
+    .opvulling {
+        height:  50px;
+    }
   .carousel-caption {
     top: 50%;
     }
@@ -115,9 +125,6 @@ hr.light-100 {
     .carousel-indicators {
     position: absolute;
     top: 90%
-    }
-    .display-4 {
-        font-size: 200%;
     }
     .social a {
         font-size: 2.5em;
@@ -129,7 +136,7 @@ hr.light-100 {
         margin-left: 10px;
     }
     .footerlogo {
-    height: 150px
+    height: 80px
 }
 }
 
@@ -143,24 +150,11 @@ hr.light-100 {
     .carousel-indicators {
         display: none;
     }
-    .display-4 {
-        font-size: 160%;
-    }
     .social a {
         font-size: 2em;
         padding: .7rem;
     }
     .footerlogo {
-    height: 130px
+    height: 70px
 }
-}
-
-
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
 }
