@@ -141,6 +141,9 @@ hr.light-100 {
 }
 
 @media (max-width: 576px) {
+    .gallery img {
+        width: 250px;
+    }
     .carousel-caption {
         top: 50%;
     }
@@ -157,4 +160,10 @@ hr.light-100 {
     .footerlogo {
     height: 70px
 }
+}
+
+@media (max-width: 350px) {
+    .gallery img {
+        width: 200px;
+    }
 }

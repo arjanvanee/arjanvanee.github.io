@@ -55,7 +55,7 @@ html, body {
     margin-top: .3rem;
     margin-bottom: 1rem;
 }
-.plaatje {
+.plaatje, .plaatje p {
     padding-top: 1em;
     padding-bottom: 1em;
 }
