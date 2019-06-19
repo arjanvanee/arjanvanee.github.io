@@ -29,21 +29,15 @@ html, body {
 }
 .carousel-inner img {
     width: 100%;
-    height: 100%;
 }
 .carousel-caption {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 45%;
+    transform: translateY(-60%);
 }
 .carousel-indicators {
     position: absolute;
     top: 70%
-}
-.carousel-caption h1 {
-    font-size: 500%;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000;
 }
 
 .P:hover {
