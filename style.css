@@ -39,42 +39,6 @@ html, body {
     position: absolute;
     top: 70%
 }
-
-.P:hover {
-    color: #ff0000;
-    text-shadow: 1px 7px 4px #000000;
-    background-color: #f4b283;
-}
-.O:hover {
-    color: aqua;
-    text-shadow: 1px 7px 4px #000000;
-    background-color: #7e95a8;
-}
-.R:hover {
-    color: #a700ff;
-    text-shadow: 1px 7px 4px #000000;
-    background-color: #79a752;
-}
-.T:hover {
-    color: #1dff00;
-    text-shadow: 1px 7px 4px #000000;
-    background-color: #9ca552;
-}
-.F:hover {
-    color: #fff500;
-    text-shadow: 1px 7px 4px #000000;
-    background-color: #a75353;
-}
-.L:hover {
-    color: rgb(255, 189, 113);
-    text-shadow: 1px 7px 4px #000000;
-    background-color: #b171d9;
-}
-.I:hover {
-    color: #009533;
-    text-shadow: 1px 7px 4px #000000;
-    background-color: #979f37;
-}
 .padding {
     padding-bottom: 2rem;
     padding-right: 2rem;
@@ -108,7 +72,7 @@ html, body {
     height: 50%;
 }
 .photoshopunity{
-    
+
 }
 .social a {
     font-size: 3.5em;
@@ -123,8 +87,7 @@ html, body {
 .cmduitleg {
     padding-top: 30px;
     background-color: #ededed;
-    text-align: center;
-    
+    text-align: center; 
 }
 .cmdtext{
     margin-top: 4%;
