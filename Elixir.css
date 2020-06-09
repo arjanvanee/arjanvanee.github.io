@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 html, body {
+    background-image: url(image/BG.jpg);
+    background-attachment: local;
     height: 100%;
     width: 100%;
     font-family: 'poppins', sans-serif;
@@ -9,6 +11,7 @@ html, body {
 }
 .navbar {
     padding: .5rem;
+    box-shadow: 0px 17px 27px 5px rgba(0,0,0,0.75);
 }
 .navbar-brand {
     height: 90px;
@@ -79,7 +82,7 @@ html, body {
 }
 .container1 {
     padding-top: 1rem;
-    background-color: #ededed;
+    background-color: rgba(191, 191, 191, 0.44);
     text-align: center;
 }
 .container2 {

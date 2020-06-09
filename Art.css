@@ -9,6 +9,7 @@ html, body {
     }
 .navbar {
     padding: .5rem;
+    box-shadow: 0px 17px 27px 5px rgba(0,0,0,0.75);
     }
 .navbar-brand {
     height: 90px;
@@ -144,7 +145,8 @@ hr.light-100 {
 
 @media (max-width: 576px) {
     .gallery img {
-        width: 180px;
+        width: 120px;
+        padding: 10px;
     }
     .carousel-caption {
         top: 50%;
@@ -169,5 +171,6 @@ hr.light-100 {
 
 @media (max-width: 350px) {
     .gallery img {
-        width: 200px;
+        width: 80px;
+        padding: 5px;
     }
