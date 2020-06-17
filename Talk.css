@@ -30,6 +30,13 @@ html, body {
 }
 .navbar .navbar-nav li a:hover {
     color: #14d100 !important;
+    transition: transform .5s;
+    transform: scale(2);
+}
+.Title{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 400px;
 }
 .padding {
     padding-right: 2rem;
@@ -42,7 +49,6 @@ html, body {
 .welcome {
     width: 75%;
     margin: 0 auto;
-    padding-top: 2rem;
 }
 .opvallend1 {
     color: #14d100;
@@ -134,10 +140,18 @@ hr.light-100 {
 }
 
 @media (max-width: 768px) {
-    }
     .social a {
         font-size: 2.5em;
         padding: 1.2rem;
+    }
+    .Title{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 300px;
+    }
+    .navbar .navbar-nav li a:hover {
+    color: #14d100 !important;
+    transform: scale(1);
     }
     .logo1 {
         height: 80%;
@@ -154,6 +168,11 @@ hr.light-100 {
         font-size: 2em;
         padding: .7rem;
     }
+        .Title{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 250px;
+}
     .footerlogo {
     height: 130px
 }
