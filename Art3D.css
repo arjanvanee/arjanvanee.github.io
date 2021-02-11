@@ -46,12 +46,12 @@ html, body {
     text-align: center;
     }
 .gallery {
-    margin: 10px 50px;
+    margin: 10px 150px;
     }
 .gallery img {
     transition: .4s;
     padding: 15px;
-    width: 320px;
+    width: 370px;
     }
 .gallery img:hover {
     filter: drop-shadow(10px 10px 3px #4e4e4e);
@@ -101,13 +101,20 @@ hr.light-100 {
     padding-bottom: 30px
     }
 /*---Media Queries --*/
+
+@media (max-width: 1440px) {
+    .gallery {
+    margin: 10px 80px;
+    }
+}
+
 @media (max-width: 992px) {
     .social a {
         font-size: 3em;
         padding: 2rem;
     }
-    .gallery img {
-        width: 300px;
+        .gallery img {
+        width: 280px;
     }
 }
 
@@ -125,7 +132,7 @@ hr.light-100 {
     transform: scale(1);
     }
     .gallery img {
-        width: 220px;
+        width: 280px;
     }
     .social a {
         font-size: 2.5em;
@@ -139,11 +146,14 @@ hr.light-100 {
     .footerlogo {
     height: 80px
     }
+    .gallery {
+    margin: 10px 0px;
+    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .gallery img {
-        width: 160px;
+        width: 200px;
         padding: 10px;
     }
     .carousel-caption {
@@ -172,9 +182,9 @@ hr.light-100 {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
     .gallery img {
-        width: 130px;
+        width: 300px;
         padding: 5px;
     }
     .gallery {
