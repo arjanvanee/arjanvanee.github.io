@@ -18,13 +18,17 @@ $(document).on("scroll", function () {
     }, false);
 
     $(document).ready(function(){
-    $('.gallery').isotope({
+    var $gallery = $('.gallery').isotope({
     itemSelector:'.item',
     stagger: 30,
     masonry: {
     isFitWidth: true,
     gutter: 20
     }
+    });
+    
+    $gallery.imagesLoaded().progress( function() {
+    $gallery.isotope('layout');
     });
     
     $('.filter-button-group').on( 'click', 'li', function() {
