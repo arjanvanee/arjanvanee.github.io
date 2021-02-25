@@ -17,7 +17,6 @@ $(document).on("scroll", function () {
     document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight -         window.innerHeight));
     }, false);
 
-    $(document).ready(function(){
     var $gallery = $('.gallery').isotope({
     itemSelector:'.item',
     stagger: 30,
@@ -26,10 +25,20 @@ $(document).on("scroll", function () {
     gutter: 20
     }
     });
-    
+
     $gallery.imagesLoaded().progress( function() {
     $gallery.isotope('layout');
-    });
+    });  
+
+//    $(document).ready(function(){
+//    $('.gallery').isotope({
+//    itemSelector:'.item',
+//    stagger: 30,
+//    masonry: {
+//    isFitWidth: true,
+//    gutter: 20
+//    }
+//    });
     
     $('.filter-button-group').on( 'click', 'li', function() {
     var filterValue = $(this).attr('data-filter');
