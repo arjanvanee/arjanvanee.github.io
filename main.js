@@ -11,11 +11,12 @@ $(document).on("scroll", function () {
     
     $("div.square>img").css("top", pixels * 0.20)
     $("div.triangle>img").css("top", pixels * -0.60)
-})
+    })
 
     window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
     }, false);
+
 
 $(document).ready(function(){
     $('.gallery').isotope({
@@ -34,5 +35,3 @@ $(document).ready(function(){
     $(this).addClass('active');
     });
 })
-
-$(window).load(function(){$('#thumbs').isotope('reLayout');});
