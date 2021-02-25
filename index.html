@@ -1,210 +1,122 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Arjan Portfolio</title>
-        
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#d3c7b5">
-    <meta name="theme-color" content="#eceaea">
-    
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
-    <script src="Java.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arjan van Ee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="main.js"></script>
+    <script src="lightbox.js"></script>
+    <script src="isotope.pkgd.min.js"></script>
 </head>
 <body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: black;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img class="logo1" src="image/Arjan-Logo-Wit-250-250.png" alt="image"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Talk.html">Talk</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Elixir.html">Elixir</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Art.html">Art</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="3D.html">3D</a>
-                </li>
+    <section class="section1">
+        <div class="plx1"></div>
+        <div class="plx2"></div>
+        <div class="plx3"></div>
+        <div class="plx4"></div>
+        <div class="plxtitle">
+            <div class="title">
+                <div>
+                    <div class="main">Arjan van Ee</div>
+                    <div class="secondary">Graphic Designer</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="plx5"></div>
+        <div class="plx6"></div>
+    </section>
+    <section class="section2">
+        <div class="square">
+            <img src= "images/Square.png">
+        </div>
+        <div class="triangle">
+            <img src= "images/Triangle.png">
+        </div>
+        <div class="holder">
+            <img src= "images/PortraitHolder.jpg"> 
+            <div class="holdertext">
+                <h1>About</h1>
+                <p>Ik ben een afgestudeerd multimedia designer binnen het profiel experience design. Tijdens mijn hbo-opleiding CMD heb ik voor verschillende media mogen ontwerpen. Van statisch tijdschrift tot een interactieve applica  word enthausiast van de interactie tussen gebruiker en systeem of toepassing, vandaar ook de keuze voor experience design. Ik heb ervaring in de volgende werelden en wil hier graag mee doorgaan.
+                <br>
+                <br>2D tekenen en ontwerpen in Photoshop en Illustrator <br>3D modelleren met Blender <br>Animeren 2D en 3D <br>Prototyping met Unity</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section3">
+        <div class="filters filter-button-group">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".2D">2D</li>
+                <li data-filter=".3D">3D</li>
             </ul>
         </div>
-    </div>
-</nav>
-
-<!--- Image Slider -->
-<div id="slides" class="carousel slide" data-ride="carousel">
-    <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-        <li data-target="#slides" data-slide-to="3"></li>
-    </ul>
-    <div class="carousel-inner">
-        <div class="carousel-caption">
-            <img src="Gifs/ArjanvanEe%20titel.gif" alt="Titel">
-        </div>
-        <div class="carousel-item active">
-            <img src="image/art_slide_1.png" alt="slider plaatje 1">
-        </div>
-        <div class="carousel-item">
-            <img src="image/art_slide_2.png" alt="slider plaatje 2">
-        </div>
-        <div class="carousel-item">
-            <img src="image/talk_slide_1.png" alt="slider plaatje 3">
-        </div>
-        <div class="carousel-item">
-            <img src="image/talk_slide_2.png" alt="slider plaatje 3">
-        </div>
-    </div>
-</div>
-
-<!--- Intro -->
-<div class="container-fluid padding">
-    <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Portfolio</h1>
-        </div>
-        <hr>
-        <div class="col-12">
-            <p class="lead">Ik ben een <span class="opvallend1">CMD'er</span> en heb mijzelf verdiept in experience design. Daarnaast vind ik het ook leuk om te <span class="opvallend1">programmeren</span>. Een idee tot leven laten komen en het uitwerken tot een werkend prototype.</p>
-        </div>
-    </div>
-</div>
-
-<!--- Three Column Section -->
-<div class="photoshopunity">
-<div class="row text-center padding">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-        <img class="icon" src="image/photoshop.jpg" alt="photoshop logo">
-        <h3>Photoshop</h3>
-        <p>Meeste ervaring met photoshop</p>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-        <img class="icon" src="image/blender.png" alt="blender logo">
-        <h3>Blender</h3>
-        <p>3D modelleren en animeren</p>
-    </div>
-    <div class="col-sm-12 col-md-4">
-        <img class="icon" src="image/unity.png" alt="unity logo">
-        <h3>Unity</h3>
-        <p>Prototypes/games maken</p>
-    </div>
-</div>
-</div>
-
-<!--- Some Text -->
-<div class="row padding cmduitleg">
-    <div class="cmdtext">
-        <h2>Communication and Multimedia Design</h2>
-        <p>Als CMD'er ontwerp je vooral digitale media vanuit het oogpunt van de gebruiker. Maar ik als experience designer hou me bezig met concepten en prototypes voor interactieve applicaties, processen, diensten, installaties, evenementen en omgevingen. Ik richt me op storytelling en het 'laten ervaren, ondergaan en beleven' van interactieve en virtuele omgevingen door gebruikers.</p>
-    </div>
-</div>
-
-<!--- Fixed background -->
-<figure>
-    <div class="fixed-wrap">
-        <div id="fixed">
-        </div>
-    </div>
-</figure>
- 
-<!--- Projecten Title -->
-<div class="container-fluid">
-<div class="row welcome text-center">
-    <div class="col-12">
-        <h1 class="display-4">Projecten</h1>
-    </div>
-    <hr>
-</div>
-</div>
-
-<!--- Cards -->
-<div class="container-fluid">
-<div class="row CardsPadding">
-    <div class="col-md-6">
-        <div class="card">
-            <img class="card-img-top" src="image/Art1.jpg" alt="plaatje">
-            <div class="card-body">
-                <h4 class="card-title">Art</h4>
-                <p class="card-text">Iets wat ik het liefst doe is tekenen. Ideeën visueel maken. Ik heb het meest ervaring met traditioneel tekenen, potlood op papier, maar ik zie steeds meer voordelen als CMD'er bij digital art.</p>
-                <a href="Art.html" class="btn btn-outline-secondary">Meer</a>
+        
+        <div class="gallery">
+            <div class="content 2D item">
+                <a href="images/2D/tekening1groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening1klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening2groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening2klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening3groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening3klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening4groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening4klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening5groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening5klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening6groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening6klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening7groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening7klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening8groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening8klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening9groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening9klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening10groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening10klein.jpg"></a>
+            </div>
+            <div class="content 2D item">
+                <a href="images/2D/tekening11groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening11klein.jpg"></a>
+            </div>
+            <div class="content 3D item">
+                <a href="images/3D/AxeThrower.gif" data-lightbox="mygallery"data-title="3D Render"><img src="images/3D/AxeThrowerKlein.jpg"></a>
+            </div>
+            <div class="content 3D item">
+                <a href="images/3D/render1groot.jpg" data-lightbox="mygallery"data-title="3D Render"><img src="images/3D/render1klein.jpg"></a>
+            </div>
+            <div class="content 3D item">
+                <a href="images/3D/render2groot.jpg" data-lightbox="mygallery"data-title="3D Render"><img src="images/3D/render2klein.jpg"></a>
+            </div>
+            <div class="content 3D item">
+                <a href="images/3D/Valkyrie.gif" data-lightbox="mygallery"data-title="3D Render"><img src="images/3D/Vlakyrieklein.jpg"></a>
+            </div>
+            <div class="content 3D item">
+                <a href="images/3D/render3groot.jpg" data-lightbox="mygallery"data-title="3D Render"><img src="images/3D/render3klein.jpg"></a>
+            </div>
+            <div class="content 3D item">
+                <a href="images/3D/render4groot.jpg" data-lightbox="mygallery"data-title="3D Render"><img src="images/3D/render4klein.jpg"></a>
             </div>
         </div>
-    </div>
+    </section>
     
-    <div class="col-md-6">
-        <div class="card">
-            <img class="card-img-top" src="image/3D1.jpg" alt="plaatje">
-            <div class="card-body">
-                <h4 class="card-title">3D</h4>
-                <p class="card-text">Mijn eerste opdracht vanuit school. Ik moest een experience creëren waarbij een verhaal werd verteld van begin tot eind.</p>
-                <a href="3D.html" class="btn btn-outline-secondary">Meer</a>
-            </div>
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
         </div>
-    </div>
-    
-    <div class="col-md-6">
-        <div class="card">
-            <img class="card-img-top" src="image/Talk1.jpg" alt="plaatje">
-            <div class="card-body">
-                <h4 class="card-title">Talk</h4>
-                <p class="card-text">Een schoolopdracht waarbij we een experience rondom een song/nummer moesten maken. Ik koos voor <span class="opvallend2">Talk</span> van <span class="opvallend2">Coldplay</span>.</p>
-                <a href="Talk.html" class="btn btn-outline-secondary">Meer info.</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-md-6">
-        <div class="card">
-            <img class="card-img-top" src="image/Elixir1.jpg" alt="plaatje">
-            <div class="card-body">
-                <h4 class="card-title">Elixir</h4>
-                <p class="card-text">Een project wat ik in mijn vrije tijd met een paar studenten op school ben gestart.</p>
-                <a href="Elixir.html" class="btn btn-outline-secondary">Meer info.</a>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-
-<!--- Footer -->
-<footer>
-    <div class="onderstediv">
-    <div class="row text-center">
-        <div class="col-12">
-            <a href="index.html"><img class="footerlogo" src="image/arjanlogo4b.png" alt="plaatje"></a>
-        </div>
-            <div class="col-12 social padding">
-                <a href="https://www.facebook.com/ArjanvanEe"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/zoesbas"><i class="fab fa-instagram"></i></a>
-            </div>
-        <div class="col-12">
-            <hr class="light-100">
-            <h5>arjanvee.github.io</h5>
-        </div>
-    </div>
-    </div>
-</footer>
+        <p>&copy; 2021 Arjan van Ee</p>
+    </footer>
 </body>
 </html>
