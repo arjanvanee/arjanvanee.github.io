@@ -17,8 +17,8 @@ $(document).on("scroll", function () {
     document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
     }, false);
 
-//    jQuery(document).ready(function ($) {
-//    setTimeout(function(){ 
+    jQuery(document).ready(function ($) {
+    setTimeout(function(){ 
     
     $(document).ready(function(){
     $('.gallery').isotope({
@@ -38,6 +38,6 @@ $(document).on("scroll", function () {
     });
     })
     
-//    }, 500);
-//    });
+    }, 200);
+    });
 
