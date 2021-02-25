@@ -24,6 +24,7 @@ body{
 }
 
 .title{
+    background-color: fuchsia;
     position: relative;
     top: -93px;
     display: -webkit-box;

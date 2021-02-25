@@ -17,8 +17,10 @@ $(document).on("scroll", function () {
     document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
     }, false);
 
-
-$(document).ready(function(){
+    jQuery(document).ready(function ($) {
+    setTimeout(function(){ 
+    
+    $(document).ready(function(){
     $('.gallery').isotope({
     itemSelector:'.item',
     stagger: 30,
@@ -34,4 +36,8 @@ $(document).ready(function(){
     $('.filter-button-group li').removeClass('active');
     $(this).addClass('active');
     });
-})
+    })
+    
+    }, 3000);
+    });
+
