@@ -14,10 +14,11 @@ $(document).on("scroll", function () {
 })
 
     window.addEventListener('scroll', () => {
-    document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight -         window.innerHeight));
+    document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
     }, false);
 
-    var $gallery = $('.gallery').isotope({
+$(document).ready(function(){
+    $('.gallery').isotope({
     itemSelector:'.item',
     stagger: 30,
     masonry: {
@@ -25,20 +26,6 @@ $(document).on("scroll", function () {
     gutter: 20
     }
     });
-
-    $gallery.imagesLoaded().progress( function() {
-    $gallery.isotope('layout');
-    });  
-
-//    $(document).ready(function(){
-//    $('.gallery').isotope({
-//    itemSelector:'.item',
-//    stagger: 30,
-//    masonry: {
-//    isFitWidth: true,
-//    gutter: 20
-//    }
-//    });
     
     $('.filter-button-group').on( 'click', 'li', function() {
     var filterValue = $(this).attr('data-filter');
@@ -47,3 +34,5 @@ $(document).on("scroll", function () {
     $(this).addClass('active');
     });
 })
+
+$(window).load(function(){$('#thumbs').isotope('reLayout');});
