@@ -24,7 +24,7 @@ body{
 }
 
 .title{
-    background-color: fuchsia;
+    background-color: rgba(0, 167, 255, 0.42);
     position: relative;
     top: -93px;
     display: -webkit-box;
