@@ -30,7 +30,9 @@ body{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex: none;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
     width: 650px;
     height: 250px;
     -webkit-box-pack: center;
@@ -54,7 +56,7 @@ body{
 .secondary{
     position: relative;
     top: -30px;
-    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Raleway', sans-serif;
     color: #ff2153;
     font-size: 30px;
     font-weight: 400;
@@ -165,8 +167,8 @@ body{
     height: 100vh;
     min-height: 600px;
     background: rgb(2,28,61);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2,28,61,1)), to(rgba(64,26,88,1)));
     background: -o-linear-gradient(top, rgba(2,28,61,1) 0%, rgba(64,26,88,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(2,28,61,1)), to(rgba(64,26,88,1)));
     background: linear-gradient(180deg, rgba(2,28,61,1) 0%, rgba(64,26,88,1) 100%);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -190,9 +192,12 @@ body{
 .square img{
     position: absolute;
     width: 20%;
-    animation: rotate 2s linear infinite;
-    animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -0.5s);
+    -webkit-animation: rotate 2s linear infinite;
+            animation: rotate 2s linear infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -0.5s);
+          animation-delay: calc(var(--scroll) * -0.5s);
 }
 
 .triangle{
@@ -206,34 +211,51 @@ body{
 .triangle img{
     position: absolute;
     width: 120%;
-    animation: rotate 1s linear infinite;
-    animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -2s);
+    -webkit-animation: rotate 1s linear infinite;
+            animation: rotate 1s linear infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  -webkit-animation-delay: calc(var(--scroll) * -2s);
+          animation-delay: calc(var(--scroll) * -2s);
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @keyframes rotate {
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 .holder{
     padding: 40px 40px 40px;
     max-width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .holder img {
     margin: 0px 50px 0 0;
     width: 400px;
-    object-fit: contain;
-    align-self: flex-start;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     -webkit-box-shadow: 0px 0px 45px 10px rgba(255,33,83,0.3); 
     box-shadow: 0px 0px 45px 10px rgba(255,33,83,0.3);
 }
 
 .holdertext {
     color: white;
-    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 
 .holdertext p{
@@ -242,7 +264,7 @@ body{
 }
 
 .holdertext h1{
-    font-family: 'Bungee Shade', cursive, sans-serif;
+    font-family:'Bungee Shade', cursive, sans-serif;
     font-size: 90px;
     margin-top: -20px;
     margin-bottom: -40px;
@@ -253,8 +275,9 @@ body{
     position: relative;
     min-height: 100vh;
     background: rgb(2,28,61);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(64,26,88,1)), to(rgba(2,28,61,1)));
     background: -o-linear-gradient(top, rgba(64,26,88,1) 100%) 0%, rgba(2,28,61,1);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(64,26,88,1)), to(rgba(2,28,61,1)));
+    background: -o-linear-gradient(top, rgba(64,26,88,1) 0%, rgba(2,28,61,1) 100%);
     background: linear-gradient(180deg, rgba(64,26,88,1) 0%, rgba(2,28,61,1) 100%);
 }
 
@@ -285,16 +308,24 @@ body{
   bottom: -2px;
   left: 0;
   background-color: #ff2153;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
 
 filters li:hover::after {
-  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .filters li.active::after {
-  transform: scaleX(1)
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1)
 }
 
 .filters li.active {
@@ -303,15 +334,19 @@ filters li:hover::after {
 
 .filters ul{
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
 }
 
 .filters li{
     position: relative;
     cursor: pointer;
-    font-family: fantasy;
+    font-family:'Bungee Shade', cursive, sans-serif;
     font-size: 300%;
     color: white;
     margin: 0 30px;
