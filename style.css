@@ -30,7 +30,7 @@ body{
     display: -ms-flexbox;
     display: flex;
     flex: none;
-    width: 30%;
+    width: 650px;
     height: 250px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -189,7 +189,6 @@ body{
 }
 
 .triangle{
-    background-color: aqua;
     position: absolute;
     width: 27%;
     height: 100%;
@@ -199,10 +198,10 @@ body{
 
 .triangle img{
     position: absolute;
-    width: 80%;
+    width: 120%;
     animation: rotate 1s linear infinite;
     animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -10s);
+  animation-delay: calc(var(--scroll) * -2s);
 }
 
 @keyframes rotate {
@@ -315,4 +314,47 @@ filters li:hover::after {
     opacity: 0.5;
 }
 
-@media ()
+@media screen and (max-width: 5000px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 900px) {
+    .title{
+        width: 80%;
+        height: 30vw;
+    }
+
+    .main{
+        position: static;
+        font-size: 8vw;
+        margin-top: -5vw;
+    }
+
+    .secondary{
+        position: static;
+        margin-top: -4vw;
+        font-size: 4.5vw;
+    
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 400px) {
+    .title{
+        border-width: 3px;
+    }
+}
