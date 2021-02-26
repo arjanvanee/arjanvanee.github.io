@@ -14,7 +14,8 @@ body{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 600px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -63,6 +64,7 @@ body{
 
 .plx1{
     height: 100vh;
+    min-height: 600px;
     position: fixed;
     left: 0%;
     right: 0%;
@@ -76,6 +78,7 @@ body{
 
 .plx2{
     height: 100vh;
+    min-height: 600px;
     position: fixed;
     left: 0%;
     right: 0%;
@@ -88,6 +91,7 @@ body{
 }
 .plx3{
     height: 100vh;
+    min-height: 600px;
     position: fixed;
     left: 0%;
     right: 0%;
@@ -101,6 +105,7 @@ body{
 
 .plx4{
     height: 100vh;
+    min-height: 600px;
     position: fixed;
     left: 0%;
     right: 0%;
@@ -113,6 +118,7 @@ body{
 }
 .plx5{
     height: 100vh;
+    min-height: 600px;
     position: fixed;
     left: 0%;
     right: 0%;
@@ -157,6 +163,7 @@ body{
 .section2{
     position: relative;
     height: 100vh;
+    min-height: 600px;
     background: rgb(2,28,61);
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(2,28,61,1)), to(rgba(64,26,88,1)));
     background: -o-linear-gradient(top, rgba(2,28,61,1) 0%, rgba(64,26,88,1) 100%);
@@ -348,14 +355,36 @@ filters li:hover::after {
         font-size: 4.5vw;
     
     }
+    
+    .content{
+    width: 250px;
+    margin-bottom: 20px;
+    line-height: 0;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-
+    .content{
+    width: 150px;
+    margin-bottom: 20px;
+    line-height: 0;
+    }
 }
 
 @media only screen and (max-width: 400px) {
     .title{
         border-width: 3px;
+    }
+    
+    .content{
+    width: 130px;
+    margin-bottom: 20px;
+    line-height: 0;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .title{
+        top: 0px;
     }
 }
