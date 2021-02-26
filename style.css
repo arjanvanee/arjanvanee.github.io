@@ -45,7 +45,7 @@ body{
 }
 
 .main{
-    font-family: 'Bungee', sans-serif;
+    font-family: 'Bungee', cursive, sans-serif;
     color: #fff;
     font-size: 55px;
     text-align: center;
@@ -242,7 +242,7 @@ body{
 }
 
 .holdertext h1{
-    font-family: Bungee, sans-serif;
+    font-family: 'Bungee', cursive, sans-serif;
     font-size: 90px;
     margin-top: -20px;
     margin-bottom: -40px;
