@@ -314,22 +314,23 @@ filters li:hover::after {
     opacity: 0.5;
 }
 
-@media screen and (max-width: 5000px) {
+
+@media only screen and (max-width: 5000px) {
     body {
         overflow: hidden;
     }
 }
 
-@media screen and (max-width: 1700px) {
+@media only screen and (max-width: 1700px) {
     
 }
 
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .title{
         width: 80%;
         height: 30vw;
@@ -349,11 +350,11 @@ filters li:hover::after {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 }
 
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .title{
         border-width: 3px;
     }
