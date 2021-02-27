@@ -26,7 +26,7 @@ body{
 }
 
 .title{
-    background-color: rgba(255, 78, 0, 0.31);
+    background-color: rgba(0, 0, 255, 0.6);
     position: relative;
     top: -93px;
     display: -webkit-box;
@@ -53,12 +53,13 @@ body{
     color: #fff;
     font-size: 55px;
     text-align: center;
-    margin-bottom: -40px;
-    margin-top: -40px
+    /margin-bottom: -40px;
+    /margin-top: -40px;
+    line-height: 1;
 }
 
 .secondary{
-    position: static;
+    /position: static;
     /margin-top: -35px;
     font-family: 'Raleway', sans-serif;
     color: #ff2153;
@@ -377,13 +378,13 @@ filters li:hover::after {
     }
 
     .main{
-        position: static;
+        /position: static;
         font-size: 7vw;
     }
 
     .secondary{
-        position: static;
-        margin-top: 5px;
+        /position: static;
+        /margin-top: 5px;
         font-size: 4.5vw;
     
     }
@@ -397,7 +398,7 @@ filters li:hover::after {
 
 @media only screen and (max-width: 600px) {
     .secondary{
-        margin-top: 15px;
+        /margin-top: 15px;
     }
     .content{
         width: 150px;
@@ -408,7 +409,7 @@ filters li:hover::after {
 
 @media only screen and (max-width: 400px) {
     .secondary{
-        margin-top: 20px;
+        /margin-top: 20px;
     }
     .title{
         border-width: 3px;
