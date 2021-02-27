@@ -57,7 +57,7 @@ body{
 
 .secondary{
     position: relative;
-    top: -30px;
+    top: -40px;
     font-family: 'Raleway', sans-serif;
     color: #ff2153;
     font-size: 30px;
@@ -377,12 +377,12 @@ filters li:hover::after {
     .main{
         position: static;
         font-size: 7vw;
-        /margin: -5vw;
+        margin: -4vw;
     }
 
     .secondary{
         position: static;
-        margin-top: -25px;
+        /margin-top: -25px;
         font-size: 4.5vw;
     
     }
