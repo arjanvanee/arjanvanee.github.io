@@ -52,12 +52,12 @@ body{
     color: #fff;
     font-size: 55px;
     text-align: center;
-    margin: -30px;
+    margin: -5px;
 }
 
 .secondary{
     position: static;
-    top: -40px;
+    /top: -60px;
     font-family: 'Raleway', sans-serif;
     color: #ff2153;
     font-size: 33px;
@@ -377,7 +377,7 @@ filters li:hover::after {
     .main{
         position: static;
         font-size: 7vw;
-        margin: -4vw;
+        /margin: -4vw;
     }
 
     .secondary{
@@ -388,35 +388,35 @@ filters li:hover::after {
     }
     
     .content{
-    width: 250px;
-    margin-bottom: 20px;
-    line-height: 0;
+        width: 250px;
+        margin-bottom: 20px;
+        line-height: 0;
     }
 }
 
 @media only screen and (max-width: 600px) {
     .secondary{
-        margin-top: -15px;
+        /margin-top: -15px;
     }
     .content{
-    width: 150px;
-    margin-bottom: 20px;
-    line-height: 0;
+        width: 150px;
+        margin-bottom: 20px;
+        line-height: 0;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .secondary{
-        margin-top: -10px;
+        /margin-top: -10px;
     }
     .title{
         border-width: 3px;
     }
     
     .content{
-    width: 130px;
-    margin-bottom: 20px;
-    line-height: 0;
+        width: 130px;
+        margin-bottom: 20px;
+        line-height: 0;
     }
 }
 
