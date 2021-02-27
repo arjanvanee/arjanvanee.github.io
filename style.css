@@ -52,15 +52,15 @@ body{
     color: #fff;
     font-size: 55px;
     text-align: center;
-    margin: 10px;
+    margin: -30px;
 }
 
 .secondary{
-    position: relative;
+    position: static;
     top: -40px;
     font-family: 'Raleway', sans-serif;
     color: #ff2153;
-    font-size: 30px;
+    font-size: 33px;
     font-weight: 400;
     text-align: center;
     
