@@ -5,6 +5,7 @@ html{
 }
 
 body{
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -51,6 +52,7 @@ body{
     color: #fff;
     font-size: 55px;
     text-align: center;
+    margin: 10px;
 }
 
 .secondary{
@@ -357,12 +359,6 @@ filters li:hover::after {
 }
 
 
-@media only screen and (max-width: 5000px) {
-    body {
-        overflow: hidden;
-    }
-}
-
 @media only screen and (max-width: 1700px) {
     
 }
@@ -380,13 +376,13 @@ filters li:hover::after {
 
     .main{
         position: static;
-        font-size: 8vw;
-        margin-top: -5vw;
+        font-size: 7vw;
+        /margin: -5vw;
     }
 
     .secondary{
         position: static;
-        margin-top: -4vw;
+        margin-top: -25px;
         font-size: 4.5vw;
     
     }
@@ -399,6 +395,9 @@ filters li:hover::after {
 }
 
 @media only screen and (max-width: 600px) {
+    .secondary{
+        margin-top: -15px;
+    }
     .content{
     width: 150px;
     margin-bottom: 20px;
@@ -407,6 +406,9 @@ filters li:hover::after {
 }
 
 @media only screen and (max-width: 400px) {
+    .secondary{
+        margin-top: -10px;
+    }
     .title{
         border-width: 3px;
     }
