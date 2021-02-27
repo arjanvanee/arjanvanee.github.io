@@ -26,7 +26,7 @@ body{
 }
 
 .title{
-    background-color: rgba(118, 0, 255, 0.6);
+    background-color: rgba(0, 0, 255, 0.6);
     position: relative;
     top: -93px;
     display: -webkit-box;
@@ -91,7 +91,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/2D/tekening10klein.jpg);
+    background-image:url(images/header/TBG2.png);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/2D/tekening10klein.jpg);
+    background-image:url(images/header/TBG3.png);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/2D/tekening10klein.jpg);
+    background-image:url(images/header/TBG4.png);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/2D/tekening10klein.jpg);
+    background-image:url(images/header/TBG5.png);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,7 +161,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/2D/tekening10klein.jpg);
+    background-image:url(images/header/BG6.png);
     background-position: 50% 100%;
     background-size: cover;
     background-repeat: no-repeat;
