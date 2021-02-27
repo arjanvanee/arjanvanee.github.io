@@ -26,7 +26,7 @@ body{
 }
 
 .title{
-    background-color: rgba(10, 0, 255, 0.31);
+    background-color: rgba(0, 255, 98, 0.31);
     position: relative;
     top: -93px;
     display: -webkit-box;
@@ -53,6 +53,7 @@ body{
     color: #fff;
     font-size: 55px;
     text-align: center;
+    margin: -40px;
 }
 
 .secondary{
@@ -377,7 +378,7 @@ filters li:hover::after {
     .main{
         position: static;
         font-size: 7vw;
-        /margin: -4vw;
+        margin: -4vw;
     }
 
     .secondary{
