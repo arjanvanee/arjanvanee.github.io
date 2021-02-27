@@ -26,6 +26,7 @@ body{
 }
 
 .title{
+    background-color: rgba(0, 255, 255, 0.31);
     position: relative;
     top: -93px;
     display: -webkit-box;
@@ -52,12 +53,11 @@ body{
     color: #fff;
     font-size: 55px;
     text-align: center;
-    margin: -5px;
 }
 
 .secondary{
     position: static;
-    /top: -60px;
+    margin-top: -35px;
     font-family: 'Raleway', sans-serif;
     color: #ff2153;
     font-size: 33px;
@@ -375,14 +375,14 @@ filters li:hover::after {
     }
 
     .main{
-        position: static;
+        /position: static;
         font-size: 7vw;
         /margin: -4vw;
     }
 
     .secondary{
         position: static;
-        /margin-top: -25px;
+        margin-top: -3vw;
         font-size: 4.5vw;
     
     }
