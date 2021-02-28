@@ -26,7 +26,6 @@ body{
 }
 
 .title{
-    background-color: rgba(0, 0, 255, 0.6);
     position: relative;
     top: -93px;
     display: -webkit-box;
@@ -49,13 +48,13 @@ body{
 }
 
 .main{
-    font-family: 'Bungee Shade', cursive, sans-serif;
+    font-family: 'Bungee', cursive;
     color: #fff;
     font-size: 55px;
     text-align: center;
     /margin-bottom: -40px;
     /margin-top: -40px;
-    line-height: 1;
+    line-height: .8;
 }
 
 .secondary{
@@ -77,7 +76,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/header/TBG1.png);
+    background-image:url(images/header/TBG1.svg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,7 +90,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/header/TBG2.png);
+    background-image:url(images/header/TBG2.svg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -104,7 +103,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/header/TBG3.png);
+    background-image:url(images/header/TBG3.svg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,7 +117,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/header/TBG4.png);
+    background-image:url(images/header/TBG4.svg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,7 +130,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/header/TBG5.png);
+    background-image:url(images/header/TBG5.svg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,7 +160,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-image:url(images/header/BG6.png);
+    background-image:url(images/header/TBG6.svg);
     background-position: 50% 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -268,12 +267,10 @@ body{
     font-size: 18px;
 }
 
-.holdertext h1{
-    font-family:'Bungee Shade', cursive, sans-serif;
+.about{
+    font-family: 'Bungee', cursive;
     font-size: 90px;
-    margin-top: -20px;
-    margin-bottom: -40px;
-    
+    line-height: 1.7;
 }
 
 .section3{
@@ -393,22 +390,6 @@ filters li:hover::after {
         width: 250px;
         margin-bottom: 20px;
         line-height: 0;
-    }
-    
-    .plx1{
-        background-image:url(images/header/TBG1.jpg);
-    }
-    .plx2{
-        background-image:url(images/header/sBG2.png);
-    }
-    .plx3{
-        background-image:url(images/header/sBG3.png);
-    }
-    .plx4{
-        background-image:url(images/header/sBG4.png);
-    }
-    .plx5{
-        background-image:url(images/header/sBG5.png);
     }
 }
 
