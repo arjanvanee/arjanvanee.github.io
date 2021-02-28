@@ -10,12 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="main.js"></script>
     <script src="lightbox.js"></script>
     <script src="isotope.pkgd.min.js"></script>
 </head>
+    
 <body>
     <section class="section1">
         <div class="plx1"></div>
@@ -33,6 +36,7 @@
         <div class="plx5"></div>
         <div class="plx6"></div>
     </section>
+    
     <section class="section2">
         <div class="square">
             <img src= "images/Square.svg">
@@ -58,7 +62,6 @@
                 <li data-filter=".3D">3D</li>
             </ul>
         </div>
-        
         <div class="gallery">
             <div class="content 2D item">
                 <a href="images/2D/tekening1groot.jpg" data-lightbox="mygallery"data-title="###"><img src="images/2D/tekening1klein.jpg"></a>
@@ -120,5 +123,20 @@
         </div>
         <p>&copy; 2021 Arjan van Ee</p>
     </footer>
+    
+    <script>
+        gsap.from('.plxtitle', {opacity: 0, duration: 1.5, y: -100, ease: 'Power2.easeOut'})
+        gsap.from('.main', {opacity: 0, duration: 1, y: 200, ease: 'Power2.easeOut', delay: .4})
+        gsap.to('.holder>img', {scrollTrigger: '.holder>img', x: 500})
+        
+        let tl = gsap.timeline({
+            scrollTrigger:{
+                trigger: '.holder',
+                start: "center bottom"
+            }
+        })
+        tl.from('.holder>img', {x: -200, opacity: 0, duration: 1.5})
+        .from('.holdertext', {x: 200, opacity: 0, duration: 1.5}, "-=1")
+    </script>
 </body>
 </html>

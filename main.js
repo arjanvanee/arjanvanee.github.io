@@ -40,4 +40,3 @@ $(document).on("scroll", function () {
     
     }, 400);
     });
-
