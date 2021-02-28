@@ -297,7 +297,7 @@ body{
 }
 
 .filters{
-    padding: 100px 20px;
+    padding: 50px 20px;
 }
 
 .filters li::after {
@@ -307,7 +307,7 @@ body{
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #ff2153;
+  background-color: #10e7e2;
   -webkit-transform: scaleX(0);
       -ms-transform: scaleX(0);
           transform: scaleX(0);
@@ -395,6 +395,14 @@ filters li:hover::after {
     font-size: 7vw;
     }
     
+    .filters li{
+    font-size: 250%;
+    }
+    
+    .filters{
+    padding: 40px 20px;
+    }
+    
     .content{
         width: 250px;
         margin-bottom: 20px;
@@ -457,6 +465,14 @@ filters li:hover::after {
                 animation-delay: calc(var(--scroll) * -2s);
     }
     
+    .filters li{
+    font-size: 200%;
+    }
+    
+    .filters{
+    padding: 30px 20px;
+    }
+    
     .content{
         width: 150px;
         margin-bottom: 20px;
@@ -510,6 +526,14 @@ filters li:hover::after {
 
     .holdertext p{
     text-align: center;
+    }
+    
+    .filters li{
+    font-size: 150%;
+    }
+    
+    .filters{
+    padding: 20px 20px;
     }
 }
 
