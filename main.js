@@ -20,6 +20,8 @@ $(document).on("scroll", function () {
     jQuery(document).ready(function ($) {
     setTimeout(function(){ 
     
+    ScrollTrigger.refresh(true);
+        
     $(document).ready(function(){
     $('.gallery').isotope({
     itemSelector:'.item',
@@ -31,12 +33,12 @@ $(document).on("scroll", function () {
     });
     
     $('.filter-button-group').on( 'click', 'li', function() {
+    ScrollTrigger.refresh(true);
     var filterValue = $(this).attr('data-filter');
     $('.gallery').isotope({ filter: filterValue });
     $('.filter-button-group li').removeClass('active');
     $(this).addClass('active');
     });
     })
-    
     }, 400);
     });

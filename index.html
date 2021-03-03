@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/935dfc9f1c.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -19,15 +20,13 @@
 </head>
     
 <body>
-    <div class="CRToverlay"></div>
-    
     <section class="section1">
         <div class="plx1"></div>
         <div class="plx2"></div>
         <div class="plx3"></div>
         <div class="plx4"></div>
         <div class="plxtitle">
-            <div class="title">
+            <div class="maintitle">
                 <div>
                     <div class="main">Arjan van Ee <br> <span class="secondary">Graphic Designer</span></div>
                 </div>
@@ -56,6 +55,7 @@
     </section>
     
     <section class="section3">
+        <h1 class="title">Art</h1>
         <div class="filters filter-button-group">
             <ul>
                 <li class="active" data-filter="*">All</li>
@@ -119,23 +119,42 @@
     </section>
     
     <footer>
-        <p>&copy; 2021 Arjan van Ee</p>
-        <a href="2DCharacterControllerTutorial-skeleton_project.zip" class="download">download my program</a>
+        <h1 class="title projects">Projects</h1>
+        <div class="container">
+            <div class="anim1">
+                <div class="card">
+                <h1>Project X</h1>
+                <p>Een project voor mezelf om te laten zien wat ik kan maken in unity. Een 2D platformer met verschillende mechanics om van te kunnen leren als ontwerper/developer.</p>
+                <a href="2DCharacterControllerTutorial-skeleton_project.zip" class="button"><span class="big">Download</span><span class="small">for windows</span></a>
+            </div>
+            </div>
+            <div class="anim2">
+                <div class="card two">
+                <h1>Talk</h1>
+                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                <a href="2DCharacterControllerTutorial-skeleton_project.zip" class="button"><span class="big">Download</span><span class="small">for windows</span></a>
+            </div>
+            </div>
+        </div>
+        <div class="socials">
+            <a href="https://www.instagram.com/zoesbas"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.facebook.com/ArjanvanEe"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/arjan-van-ee/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="sign">
+            <p>&copy; 2021 Designed and developed by Arjan van Ee</p>
+        </div>
     </footer>
     
     <script>
         gsap.from('.plxtitle', {opacity: 0, duration: 1.5, y: -100, ease: 'Power2.easeOut'})
         gsap.from('.main', {opacity: 0, duration: 1, y: 200, ease: 'Power2.easeOut', delay: .4})
-        gsap.to('.holder>img', {scrollTrigger: '.holder>img', x: 500})
+  
+        gsap.from('.holder>img', {scrollTrigger: {trigger: '.holder>img', start: "center bottom"}, x: -200, opacity: 0, duration: 1.5})
+        gsap.from('.holdertext', {scrollTrigger: {trigger: '.holdertext', start: "center bottom"},x: 200, opacity: 0, duration: 1.5})
         
-        let tl = gsap.timeline({
-            scrollTrigger:{
-                trigger: '.holder',
-                start: "center bottom"
-            }
-        })
-        tl.from('.holder>img', {x: -200, opacity: 0, duration: 1.5})
-        .from('.holdertext', {x: 200, opacity: 0, duration: 1.5}, "-=1")
+        gsap.from('.anim1', {scrollTrigger: {trigger: '.anim1', start: "center bottom"}, x: -200, opacity: 0, duration: 1.5})
+        gsap.from('.anim2', {scrollTrigger: {trigger: '.anim2', start: "center bottom"},x: 200, opacity: 0, duration: 1.5})
     </script>
 </body>
 </html>
