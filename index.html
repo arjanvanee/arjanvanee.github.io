@@ -131,7 +131,7 @@
             <div class="anim2">
                 <div class="card two">
                 <h1>Talk</h1>
-                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+                <p>Een project voor mezelf om te laten zien wat ik kan maken in unity. Een 2D platformer met verschillende mechanics om van te kunnen leren als ontwerper/developer.</p>
                 <a href="2DCharacterControllerTutorial-skeleton_project.zip" class="button"><span class="big">Download</span><span class="small">for windows</span></a>
             </div>
             </div>
@@ -155,6 +155,12 @@
         
         gsap.from('.anim1', {scrollTrigger: {trigger: '.anim1', start: "center bottom"}, x: -200, opacity: 0, duration: 1.5})
         gsap.from('.anim2', {scrollTrigger: {trigger: '.anim2', start: "center bottom"},x: 200, opacity: 0, duration: 1.5})
+        
+        lightbox.option({
+            'alwaysShowNavOnTouchDevices': true,
+            'disableScrolling': true,
+            'wrapAround': true
+        })
     </script>
 </body>
 </html>
