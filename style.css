@@ -11,33 +11,35 @@ body{
 }
 
 .section1{
+/*
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+*/
     height: 100vh;
     min-height: 600px;
+/*
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-}
-
-.download{
-    position: relative;
+*/
 }
 
 .maintitle{
     position: relative;
-    top: -93px;
+    top: 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+/*
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
+*/
     width: 650px;
     height: 250px;
     -webkit-box-pack: center;
@@ -144,9 +146,11 @@ body{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+/*
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+*/
     top: 0%;
     right: 0%;
     bottom: 0%;
