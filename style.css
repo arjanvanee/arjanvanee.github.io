@@ -31,7 +31,7 @@ body{
 
 .maintitle{
     position: relative;
-    top: 25%;
+    bottom: -25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
