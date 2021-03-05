@@ -261,7 +261,7 @@ background: linear-gradient(0deg, rgba(1,19,41,1) 0%, rgba(2,28,61,1) 100%);
     font-family: 'Ubuntu', sans-serif;
     text-align: left;
     margin: 0;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .about{
@@ -427,7 +427,7 @@ footer p, a{
 
 .card p{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     margin: 0 40px 0 40px;
 }
 
@@ -657,6 +657,7 @@ footer p, a{
     
     .card p{
         margin: 0 30px;
+        font-size: 15px;
     }
     
     .button{
