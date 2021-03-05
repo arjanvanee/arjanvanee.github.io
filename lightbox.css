@@ -157,6 +157,7 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-details {
+  font-family: 'Ubuntu', sans-serif;
   width: 85%;
   float: left;
   text-align: left;
