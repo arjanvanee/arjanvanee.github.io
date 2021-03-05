@@ -650,6 +650,7 @@ footer p, a{
     .card{
         margin: 40px 30px;
         height: 100%;
+        box-shadow: 0px 0px 25px 10px rgba(255, 33, 83, 0.37);
     }
     
     .card h1{
