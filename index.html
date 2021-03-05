@@ -47,9 +47,9 @@
         <div class="holder">
             <img src= "images/PortraitHolder.jpg"> 
             <div class="holdertext">
-                <p><span class="about">About</span><br>Ik ben een afgestudeerd multimedia designer binnen het profiel experience design. Tijdens mijn hbo-opleiding CMD heb ik voor verschillende media mogen ontwerpen. Van statisch tijdschrift tot een interactieve applicatie. Ik word vooral enthausiast van de interactie tussen gebruiker en systeem of toepassing, vandaar ook de keuze voor experience design. Ik heb ervaring in de volgende werelden en wil hier graag mee doorgaan.
+                <p><span class="about">About</span><br>Ik ben een afgestudeerd multimedia designer binnen het profiel experience design. Tijdens mijn hbo-opleiding CMD heb ik voor verschillende media mogen ontwerpen. Van statisch tijdschrift tot een interactieve applicatie. Ik word vooral enthausiast van de interactie tussen gebruiker en systeem of toepassing, vandaar ook de keuze voor experience design. <br>Ik heb ervaring in het volgende en wil hier graag mee doorgaan:
                 <br>
-                <br>2D tekenen en ontwerpen in Photoshop en Illustrator <br>3D modelleren met Blender <br>Animeren 2D en 3D <br>Prototyping met Unity</p>
+                <br>2D tekenen en ontwerpen in Photoshop en Illustrator <br>3D modelleren met Blender <br>Animeren, 2D en 3D <br>Prototyping met Unity</p>
             </div>
         </div>
     </section>
@@ -124,16 +124,18 @@
             <div class="anim1">
                 <div class="card">
                 <h1>Project X</h1>
-                <p>Een project voor mezelf om te laten zien wat ik kan maken in unity. Een 2D platformer met verschillende mechanics om van te kunnen leren als ontwerper/developer.</p>
-                <a href="2DCharacterControllerTutorial-skeleton_project.zip" class="button"><span class="big">Download</span><span class="small">for windows</span></a>
-            </div>
+                <p>Een project voor mezelf om te laten zien wat ik kan maken in unity. Een 2D platformer met verschillende game mechanics om van te kunnen leren als ontwerper/developer.</p>
+                <a onclick="myFunction()" class="button"><span class="big">Download</span><span class="small">for windows</span></a>
+<!--                <a href="2DCharacterControllerTutorial-skeleton_project.zip" class="button"><span class="big">Download</span><span class="small">for windows</span></a>-->
+                </div>
             </div>
             <div class="anim2">
                 <div class="card two">
                 <h1>Talk</h1>
-                <p>Een project voor mezelf om te laten zien wat ik kan maken in unity. Een 2D platformer met verschillende mechanics om van te kunnen leren als ontwerper/developer.</p>
-                <a href="2DCharacterControllerTutorial-skeleton_project.zip" class="button"><span class="big">Download</span><span class="small">for windows</span></a>
-            </div>
+                <p>Één van mijn eerste schoolopdrachten gemaakt in unity. Ik het nummer Talk van Coldplay tot een experience gemaakt. Ook dit is een 2d platformer maar in tegenstelling tot Project X heb ik dit project klein gehouden en gefocust op het verhaal.</p>
+                <a onclick="myFunction()" class="button"><span class="big">Download</span><span class="small">for windows</span></a>
+<!--                <a href="2DCharacterControllerTutorial-skeleton_project.zip" class="button"><span class="big">Download</span><span class="small">for windows</span></a>-->
+                </div>
             </div>
         </div>
         <div class="socials">
@@ -147,6 +149,10 @@
     </footer>
     
     <script>
+        function myFunction() {
+            alert("De bestanden staan nog niet klaar om te downloaden :(");
+        }
+        
         gsap.from('.plxtitle', {opacity: 0, duration: 1.5, y: -100, ease: 'Power2.easeOut'})
         gsap.from('.main', {opacity: 0, duration: 1, y: 200, ease: 'Power2.easeOut', delay: .4})
   
