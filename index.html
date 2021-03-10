@@ -25,13 +25,11 @@
         <div class="plx2"></div>
         <div class="plx3"></div>
         <div class="plx4"></div>
-        <div class="plxtitle">
+<!--        <div class="plxtitle">-->
             <div class="maintitle">
-                <div>
-                    <div class="main">Arjan van Ee <br> <span class="secondary">Graphic Designer</span></div>
-                </div>
+                <h1 class="main">Arjan van Ee <br> <span class="secondary">Graphic Designer</span></h1>
             </div>
-        </div>
+<!--        </div>-->
         
         <div class="plx5"></div>
         <div class="plx6"></div>
@@ -153,7 +151,7 @@
             alert("De bestanden staan nog niet klaar om te downloaden :(");
         }
         
-        gsap.from('.plxtitle', {opacity: 0, duration: 1.5, y: -100, ease: 'Power2.easeOut'})
+        gsap.from('.maintitle', {opacity: 0, duration: 1.5, y: -100, ease: 'Power2.easeOut'})
         gsap.from('.main', {opacity: 0, duration: 1, y: 200, ease: 'Power2.easeOut', delay: .4})
   
         gsap.from('.holder>img', {scrollTrigger: {trigger: '.holder>img', start: "center bottom"}, x: -200, opacity: 0, duration: 1.5})
