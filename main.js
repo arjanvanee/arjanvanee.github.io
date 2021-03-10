@@ -6,7 +6,7 @@ $(document).on("scroll", function () {
     $("div.plx2").css("top", pixels * -0.10)
     $("div.plx3").css("top", pixels * -0.25)
     $("div.plx4").css("top", pixels * -0.50)
-    $("div.plxtitle").css("top", pixels * -0.65)
+    $("div.maintitle").css("top", pixels * -0.65)
     $("div.plx5").css("top", pixels * -0.70)
     
     $("div.square>img").css("top", pixels * 0.20)
