@@ -40,5 +40,5 @@ $(document).on("scroll", function () {
     $(this).addClass('active');
     });
     })
-    }, 400);
+    }, 1200);
     });

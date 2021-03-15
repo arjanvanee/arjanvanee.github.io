@@ -20,6 +20,10 @@
 </head>
     
 <body>
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
     <section class="section1">
         <div class="plx1"></div>
         <div class="plx2"></div>
@@ -143,6 +147,11 @@
     </footer>
     
     <script>
+        setTimeout(function() {
+            $('.loader-wrapper').addClass('hidden');
+            $('html').css({'overflow-y': 'auto'});
+        }, 1500);
+        
         function myFunction() {
             alert("De bestanden staan nog niet klaar om te downloaden :(");
         }
